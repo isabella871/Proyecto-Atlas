@@ -1,0 +1,1237 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --verde: #00ffad;
+    --azul: #192440;
+    --blanco: #fff;
+    --texto: #292e36;
+    --tipografia:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    font-family: var(--tipografia);
+    overflow-x: hidden;
+}
+
+header{
+    color: var(--blanco);
+}
+
+header img{
+    position: relative;
+    width: 140vw;
+}
+
+.banner-items{
+    padding-left: 25px;
+    top: 14px;
+    position: absolute;
+    width: 95%;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+}
+
+nav img{
+    width: 8%;
+    height: 8%;
+}
+
+nav h2{
+    font-size: 9px;
+    font-weight: 200;
+}
+
+.banner-content{
+    position: absolute;
+    z-index: 1;
+    width: 60%;
+    padding-top: 15px; 
+    padding-right: 100px;
+}
+
+.banner-content h1{
+    font-size: 15px;
+}
+
+.banner-content p{
+    font-size: 7px;
+}
+
+.banner-content button{
+    background-color: var(--verde);
+    padding: 4px 8px 4px 8px;
+    font-weight: 600;
+    font-size: 7px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Segunda seccion */
+.first-section{
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.first-section h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.first-section h3{
+    color: var(--azul);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.first-section p{
+    font-size: 8px;
+}
+
+.first-section img{
+    width: 30%;
+}
+
+.items-firstSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-firstSection{
+    padding: 0 15px 0 15px;
+}
+
+
+/* Segunda seccion */
+.second-section{
+    padding-top: 25px;
+    width: 100%;
+}
+
+.all{
+    position: relative;
+    min-height: 100px;
+    padding: 0px 20px 20px 20px;
+    overflow: hidden;
+}
+
+.all::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--verde); 
+    clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 0;
+}
+
+.content-SSection{
+    position: relative;
+    z-index: 1; 
+    display: flex;
+    align-items: center;
+    color: var(--azul);
+}
+
+.content-SSection img{
+    width: 55%;
+    height: 55%;
+}
+
+.content-SSection p{
+    font-size: 8px;
+}
+
+.content-SSection h2{
+    font-size: 16px;
+}
+
+.content-SSection button{
+    background-color: var(--azul);
+    border: none;
+    border-radius: 10px;
+    color: var(--blanco);
+    font-size: 6px;
+    padding: 5px 10px 5px 10px;
+}
+
+.pp-section{
+    padding-top: 25px;
+}
+
+/* Última sección */
+.last-section{
+    padding-top: 16px;
+    text-align: center;
+}
+
+.last-section h2{
+    color: var(--azul);
+    font-size: 18px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cards p{
+    font-size: 9px;
+}
+
+.card1 button{
+    border-color: var(--azul);
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 10px;
+    color: var(--azul);
+    font-size: 8px;
+    font-weight: 700;
+    padding: 6px 13px 6px 13px;
+}
+
+.card1 h3{
+    color: var(--azul);
+    font-size: 15px;
+}
+
+.card2{
+    background-color: var(--azul);
+    padding-bottom: 16px;
+    margin: 0 auto;
+    padding: 2px 30px 15px 30px;
+}
+
+.card2 button{
+    background-color: var(--verde);
+    border: none;
+    border-radius: 9px;
+    color: var(--azul);
+    font-size: 8px;
+    font-weight: 700;
+    padding: 6px 13px 6px 13px;
+}
+
+.card2 h3{
+    color: var(--blanco);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card2 p{
+    color: var(--blanco);
+    font-size: 9px;
+}
+
+/* Barra Publicitaria */
+.barra-publicitaria{
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    margin-top: 25px;
+    align-items: end;
+    justify-content: center;
+    gap: 15px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.barra-publicitaria img{
+    width: 10%;
+    height: 10%;
+}
+
+/* Contact Us */
+.contactUs{
+    width: 100vw;
+    height: auto;
+}
+
+.contact-image{
+    position: relative;
+}
+
+.contactUs img{
+    width: 100vw;
+    height: 340px;
+}
+
+.content-contactUs{ /*position: absolute; Para pantanllas grandes(texto dentro de la imagen)*/
+    font-size: 9px;
+    display: flex;
+    flex-direction: column;
+    position: absolute; 
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--blanco);
+}
+
+.contact-items h2{
+    font-size: 15px;
+}
+
+.form{
+    padding-top: 15px;
+}
+
+.form input{
+    border-color: var(--verde);
+    border-radius: 5px;
+    border-width: 1px;
+    background: none;
+    margin-bottom: 8px;
+    width: 200px;
+}
+
+.form button{
+    margin-top: 10px;
+    background-color: var(--verde);
+    border: none;
+    border-radius: 10px;
+    color: var(--azul);
+    font-size: 9px;
+    font-weight: 600;
+    padding: 4px 0 4px 0;
+    width: 205px;
+}
+
+/* Footer */
+footer{
+    background-color: var(--azul);
+    display: flex;
+    justify-content: space-between;
+    color: var(--blanco);
+    position: relative;
+    font-size: 9px;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+footer img{
+    width: 100vw;
+}
+
+.enlaces{
+    display: flex;
+    gap: 2px;
+}
+
+.enlaces img{
+    width: 15px;
+    height: 15px;
+}
+
+@media (min-width: 390px) and (max-width: 480px) {
+    .banner-items{
+        padding-left: 37px;
+        top: 2%;
+    }
+
+    .banner-content{
+        padding-top: 15px; 
+        padding-right: 100px;
+    }
+
+    .banner-content h1{
+        font-size: 16px;
+    }
+
+    .banner-content p{
+        font-size: 9px;
+    }
+
+    .banner-content button{
+        padding: 6px 11px 6px 11px;
+        font-size: 8px;
+    }
+
+    /* Primer Bloque - Contenido Principal */
+    .first-section{
+        padding: 25px 30px 0 30px;
+    }
+
+    .first-section h2{
+        font-size: 17px;
+    }
+
+    .first-section h3{
+        color: var(--azul);
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .first-section p{
+        font-size: 10px;
+    }
+
+    .text-firstSection{
+        padding: 0 35px 0 35px;
+    }
+
+    /* Segundo Bloque - Contenido Principal */
+    .second-section{
+        padding-top: 25px;
+        width: 100%;
+    }
+
+    .all{
+        padding: 0px 30px 20px 30px;
+    }
+
+    .content-SSection{
+        gap: 20px;
+    }
+
+    .content-SSection p{
+        font-size: 9px;
+    }
+
+    .content-SSection h2{
+        font-size: 18px;
+    }
+
+    .content-SSection button{
+        background-color: var(--azul);
+        border: none;
+        border-radius: 10px;
+        color: var(--blanco);
+        font-size: 8px;
+        padding: 5px 10px 5px 10px;
+    }
+
+    .pp-section{
+        padding-top: 25px;
+    }
+
+    .last-section{
+        padding-top: 25px;
+    }
+
+    .last-section h2{
+        font-size: 18px;
+    }
+
+    /* Tercer Bloque - Segunda Sección */
+    .contact-image{
+        position: relative;
+        display: inline-block;
+    }
+
+    .contactUs img{
+        width: 245%;
+    }
+
+    .content-contactUs{ /*position: absolute; Para pantanllas grandes(texto dentro de la imagen)*/
+        font-size: 9px;
+        display: flex;
+        flex-direction: column;
+        position: absolute; 
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%);
+        gap: 20px;
+    }
+
+    .contact-items h2{
+        font-size: 16px;
+    }
+
+    /* Última sección */
+    .last-section{
+        padding-top: 16px;
+        text-align: center;
+    }
+
+    .last-section h2{
+        color: var(--azul);
+        font-size: 18px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cards p{
+        font-size: 9px;
+    }
+
+    .card1 button{
+        border-color: var(--azul);
+        border-width: 1.5px;
+        border-style: solid;
+        border-radius: 10px;
+        color: var(--azul);
+        font-size: 8px;
+        font-weight: 700;
+        padding: 6px 13px 6px 13px;
+    }
+
+    .card1 h3{
+        color: var(--azul);
+        font-size: 15px;
+    }
+
+    .card2{
+        background-color: var(--azul);
+        padding-bottom: 16px;
+        margin: 0 auto;
+        padding: 2px 30px 15px 30px;
+    }
+
+    .card2 button{
+        background-color: var(--verde);
+        border: none;
+        border-radius: 9px;
+        color: var(--azul);
+        font-size: 8px;
+        font-weight: 700;
+        padding: 6px 13px 6px 13px;
+    }
+
+    .card2 h3{
+        color: var(--blanco);
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .card2 p{
+        color: var(--blanco);
+        font-size: 9px;
+    }
+
+    /* Barra Publicitaria */
+    .barra-publicitaria{
+        gap: 22px;
+    }
+
+    /* Contact Us */
+    .contactUs img{
+        height: 420px;
+    }
+
+    .content-contactUs{ /*position: absolute; Para pantanllas grandes(texto dentro de la imagen)*/
+        font-size: 10px;
+        flex-direction: column;
+        top: 5%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 562px) {
+    .banner-items{
+        padding-left: 45px;
+    }
+
+    .banner-content{
+        padding-top: 20px; 
+    }
+
+    .banner-content h1{
+        font-size: 20px;
+    }
+
+    .banner-content p{
+        font-size: 11px;
+    }
+
+    .banner-content button{
+        padding: 6px 14px 6px 14px;
+        font-size: 9px;
+    }
+
+    /* Primer Bloque - Contenido Principal */
+    .first-section{
+        padding: 25px 30px 0 30px;
+    }
+
+    .first-section h2{
+        font-size: 18px;
+    }
+
+    .first-section h3{
+        font-size: 16px;
+    }
+
+    .first-section p{
+        font-size: 11px;
+    }
+
+    .first-section img{
+        width: 35%;
+    }
+
+    .text-firstSection{
+        padding: 0 35px 0 35px;
+    }
+
+    /* Segundo Bloque - Contenido Principal */
+    .second-section{
+        padding-top: 35px;
+    }
+
+    .all{
+        padding: 0px 35px 20px 35px;
+    }
+
+    .content-SSection p{
+        font-size: 11px;
+    }
+
+    .content-SSection h2{
+        font-size: 19px;
+    }
+
+    .content-SSection button{
+        font-size: 9px;
+        padding: 6px 14px 6px 14px;
+    }
+
+    /* Última sección */
+    .last-section{
+        padding-top: 16px;
+        text-align: center;
+    }
+
+    .last-section h2{
+        color: var(--azul);
+        font-size: 18px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cards p{
+        font-size: 9px;
+    }
+
+    .card1 button{
+        border-color: var(--azul);
+        border-width: 1.5px;
+        border-style: solid;
+        border-radius: 10px;
+        color: var(--azul);
+        font-size: 8px;
+        font-weight: 700;
+        padding: 6px 13px 6px 13px;
+    }
+
+    .card1 h3{
+        color: var(--azul);
+        font-size: 15px;
+    }
+
+    .card2{
+        background-color: var(--azul);
+        padding-bottom: 16px;
+        margin: 0 auto;
+        padding: 2px 30px 15px 30px;
+    }
+
+    .card2 button{
+        background-color: var(--verde);
+        border: none;
+        border-radius: 9px;
+        color: var(--azul);
+        font-size: 8px;
+        font-weight: 700;
+        padding: 6px 13px 6px 13px;
+    }
+
+    .card2 h3{
+        color: var(--blanco);
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .card2 p{
+        color: var(--blanco);
+        font-size: 9px;
+    }
+
+    /* Barra Publicitaria */
+    .barra-publicitaria{
+        gap: 25px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    /* Contact Us */
+    .contact-image{
+        position: relative;
+    }
+
+    .contactUs img{
+        width: 100vw;
+        height: 220px;
+    }
+
+    .content-contactUs{ /*position: absolute; Para pantanllas grandes(texto dentro de la imagen)*/
+        font-size: 9px;
+        flex-direction: row;
+        top: 10%;
+        left: 40%;
+    }
+
+    .contact-items h2{
+        font-size: 15px;
+    }
+
+    .form {
+        padding-top: 35px;
+        padding-left: 40px;
+        max-width: 100px;
+    }
+
+    .form-input {
+        display: flex;
+        gap: 20px; /* Espacio entre Name y Email */
+    }
+
+    .form label {
+        font-size: 9px;
+        color: var(--verde);
+    }
+
+    .form input {
+        border: 1px solid var(--verde);
+        border-radius: 4px;
+        background: none;
+        margin-bottom: 12px;
+        padding: 6px;
+        color: white;
+        width: 80px;
+        height: 5px;
+    }
+
+    .form-message input {
+        width: 200%;
+        height: 25px;
+    }
+
+    .form button {
+        margin-top: 10px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 8px 0;
+        width: 210%;
+    }
+}
+
+@media (min-width: 768px) {
+    nav{
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    nav img{
+        width: 9%;
+        height: 9%;
+    }
+
+    nav h2{
+        font-size: 16px;
+        font-weight: 200;
+    }
+
+    .banner-items{
+        padding-left: 60px;
+    }
+
+    .banner-content{
+        padding-top: 65px; 
+    }
+
+    .banner-content h1{
+        font-size: 34px;
+    }
+
+    .banner-content p{
+        font-size: 13px;
+    }
+
+    .banner-content button{
+        padding: 8px 21px 8px 21px;
+        margin-top: 15px;
+        border-radius: 12px;
+        font-size: 11px;
+    }
+
+    /* Segunda seccion */
+    .first-section{
+        padding: 35px 40px 0 40px;
+    }
+
+    .first-section h2{
+        font-size: 23px;
+    }
+
+    .first-section h3{
+        color: var(--azul);
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .first-section p{
+        font-size: 11px;
+    }
+
+    .first-section img{
+        width: 55%;
+        height: 55%;
+    }
+
+    .items-firstSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-firstSection{
+        padding: 0 15px 0 15px;
+        justify-content: start;
+    }
+
+    .section-elements{
+        display: flex;
+        gap: 40px;
+    }
+
+    /* Segunda seccion */
+    .second-section{
+        padding-top: 75px;
+    }
+
+    .all{
+        min-height: 100px;
+        padding: 0px 40px 80px 60px;
+    }
+
+    .content-SSection{
+        align-items: start;
+    }
+
+    .content-SSection img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .content-SSection p{
+        font-size: 11px;
+    }
+
+    .content-SSection h2{
+        font-size: 22px;
+    }
+
+    .content-SSection button{
+        background-color: var(--azul);
+        font-size: 10px;
+        padding: 6px 16px 6px 16px;
+    }
+
+    .pp-section{
+        padding-top: 45px;
+    }
+
+    /* Última sección */
+    .last-section{
+        padding: 36px 110px 30px 100px;
+    }
+
+    .last-section h2{
+        font-size: 22px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .cards p{
+        font-size: 9px;
+    }
+
+    .card1 button{
+        border-color: var(--azul);
+        border-width: 1.5px;
+        border-style: solid;
+        border-radius: 10px;
+        color: var(--azul);
+        font-size: 8px;
+        font-weight: 700;
+        padding: 6px 13px 6px 13px;
+    }
+
+    .card1 h3{
+        font-size: 15px;
+    }
+
+    .card2{
+        padding-bottom: 16px;
+        padding: 2px 60px 15px 60px;
+        margin: 0 auto;
+    }
+
+    .card2 button{
+        border: none;
+        border-radius: 9px;
+        color: var(--azul);
+        font-size: 8px;
+        font-weight: 700;
+        padding: 6px 13px 6px 13px;
+    }
+
+    .card2 h3{
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .card2 p{
+        font-size: 9px;
+    }
+
+    /* Barra Publicitaria */
+    .barra-publicitaria{
+        gap: 44px;
+        padding-bottom: 25px;
+    }
+
+    .barra-publicitaria img{
+        width: 9%;
+    }
+
+    /* Contact Us */
+    .contactUs img{
+        width: 100vw;
+        height: 280px;
+    }
+
+    .content-contactUs{ /*position: absolute; Para pantanllas grandes(texto dentro de la imagen)*/
+        font-size: 9px;
+        flex-direction: row;
+        top: 10%;
+        left: 40%;
+    }
+
+    .content-contactUs p{
+        font-size: 11px;
+    }
+
+    .contact-items h2{
+        font-size: 22px;
+    }
+
+    .form {
+        padding-top: 55px;
+        padding-left: 80px;
+        max-width: 100px;
+    }
+
+    .form-input {
+        display: flex;
+        gap: 20px; /* Espacio entre Name y Email */
+    }
+
+    .form label {
+        font-size: 11px;
+        color: var(--verde);
+    }
+
+    .form input {
+        border: 1px solid var(--verde);
+        margin-bottom: 12px;
+        padding: 6px;
+        color: white;
+        width: 120px;
+        height: 5px;
+    }
+
+    .form-message input {
+        width: 275%;
+        height: 40px;
+    }
+
+    .form button {
+        margin-top: 10px;
+        border-radius: 20px;
+        font-size: 11px;
+        padding: 8px 0;
+        width: 285px;
+    }
+
+    /* Footer */
+    footer{
+        font-size: 10px;
+        padding: 6px 40px 6px 40px;
+    }
+
+    footer img{
+        width: 100vw;
+    }
+
+    .enlaces{
+        gap: 7px;
+    }
+
+    .enlaces img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (min-width: 1279px) {
+    nav{
+        padding-top: 25px;
+    }
+
+    nav img{
+        width: 9%;
+        height: 9%;
+    }
+
+    nav h2{
+        font-size: 23px;
+        font-weight: 200;
+    }
+
+    .banner-items{
+        padding-left: 90px;
+    }
+
+    .banner-content{
+        padding-top: 95px; 
+    }
+
+    .banner-content h1{
+        font-size: 50px;
+    }
+
+    .banner-content p{
+        font-size: 23px;
+    }
+
+    .banner-content button{
+        padding: 15px 26px 15px 26px;
+        margin-top: 15px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+
+    /* Segunda seccion */
+    .first-section{
+        padding: 45px 40px 0 40px;
+    }
+
+    .first-section h2{
+        font-size: 39px;
+    }
+
+    .first-section h3{
+        font-size: 27px;
+        font-weight: 500;
+    }
+
+    .first-section p{
+        font-size: 20px;
+    }
+
+    .first-section img{
+        width: 58%;
+        height: 58%;
+    }
+
+    .text-firstSection{
+        padding: 0 25px 0 25px;
+    }
+
+    .section-elements{
+        display: flex;
+        gap: 10px;
+    }
+
+    /* Segunda seccion */
+    .second-section{
+        padding-top: 105px;
+    }
+
+    .content-SSection img{
+        width: 65%;
+        height: 65%;
+    }
+
+    .content-SSection p{
+        font-size: 20px;
+    }
+
+    .content-SSection h2{
+        font-size: 39px;
+    }
+
+    .content-SSection button{
+        font-size: 20px;
+        border-radius: 23px;
+        padding: 15px 26px 15px 26px;
+    }
+
+    .pp-section{
+        padding-top: 85px;
+    }
+
+    /* Última sección */
+    .last-section{
+        padding: 70px 190px 30px 140px;
+    }
+
+    .last-section h2{
+        font-size: 39px;
+    }
+
+    .cards p{
+        font-size: 23px;
+    }
+
+    .card1 button{
+        border-width: 1px;
+        border-radius: 20px;
+        font-size: 17px;
+        padding: 15px 33px 15px 33px;
+    }
+
+    .card1 h3{
+        font-size: 27px;
+    }
+
+    .card2{
+        padding-bottom: 16px;
+        padding: 2px 60px 25px 60px;
+        margin: 0 auto;
+    }
+
+    .card2 button{
+        border-radius: 20px;
+        font-size: 17px;
+        padding: 15px 33px 15px 33px;
+    }
+
+    .card2 h3{
+        font-size: 27px;
+        font-weight: 500;
+    }
+
+    .card2 p{
+        font-size: 23px;
+    }
+
+    /* Barra Publicitaria */
+    .barra-publicitaria{
+        gap: 96px;
+        padding-bottom: 25px;
+        margin-top: 55px;
+    }
+
+    .barra-publicitaria img{
+        width: 8%;
+    }
+
+    /* Contact Us */
+    .contactUs img{
+        width: 100vw;
+        height: 420px;
+    }
+
+    .content-contactUs{ /*position: absolute; Para pantanllas grandes(texto dentro de la imagen)*/
+        font-size: 9px;
+        flex-direction: row;
+        top: 15px;
+        left: 37%;
+    }
+
+    .content-contactUs p{
+        font-size: 20px;
+    }
+
+    .contact-items h2{
+        font-size: 39px;
+    }
+
+    .form {
+        padding-top: 105px;
+        padding-left: 130px;
+        max-width: 180px;
+    }
+
+    .form-input {
+        gap: 20px; /* Espacio entre Name y Email */
+    }
+
+    .form label {
+        font-size: 20px;
+        color: var(--verde);
+    }
+
+    .form input {
+        border: 1px solid var(--verde);
+        margin-bottom: 12px;
+        padding: 6px;
+        color: white;
+        width: 230px;
+        height: 20px;
+    }
+
+    .form-message input {
+        width: 275%;
+        height: 80px;
+    }
+
+    .form button {
+        margin-top: 10px;
+        border-radius: 20px;
+        font-size: 20px;
+        padding: 8px 0;
+        width: 510px;
+    }
+
+    /* Footer */
+    footer{
+        font-size: 16px;
+        padding: 7px 70px 7px 70px;
+    }
+
+    footer img{
+        width: 100vw;
+    }
+
+    .enlaces{
+        gap: 11px;
+    }
+
+    .enlaces img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
